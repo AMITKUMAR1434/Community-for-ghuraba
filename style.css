@@ -1,0 +1,109 @@
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: Rubik ,sans-serif;
+    /* background-color: #8d98e3; */
+}
+
+
+ header{
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);   */
+    
+}
+/* for navsection code  */
+.navsection{
+    width: 100%;
+    height: 10vh;
+   display: flex; justify-content: space-around;
+   align-items:center;
+   background-image: linear-gradient(to top,#d72c0a 10%, #0095ff 60%,#d72c0a 10%,#0095ff 10% );
+ 
+   
+}
+ /* for logo code  */
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagepichhe 2s linear infinite;
+    animation-direction: alternate;
+
+}
+/* for animation */
+@keyframes aagepichhe{
+    from{padding-left: 40px;}
+    to{
+        padding-right: 40px;
+    }
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+ nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+nav a:first-child{
+    color: white;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid white;
+    transition: all 0.4s linear;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+/* for main section background code  */
+.container{
+    position: relative;
+    background-image: url("/images/poor1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+}
+.blur{
+    text-align: center;
+    width: 50%;
+    /* blur effect to the drop  */
+    backdrop-filter: blur(5px); 
+    background-color:#4888ab;
+    font-size: 25px;
+    height: 50%;
+    width: 50vh;
+    
+}
+.blur:first-child{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+.blur p{
+ font-family: cursive;
+ font-weight: 900;
+ font-size: 20px;
+ color: #fff;
+
+}
